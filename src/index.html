@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIC TAC TOE</title>
+    <link rel="stylesheet" href="/src/css/index.css">
+</head>
+<body>
+
+    <br>
+    <h2>Tic Tac Toe</h2>
+    <section>
+        <p>Display de controles</p>
+
+        <select id="configurcion">
+            <option value="">Configuración</option>
+            <option value="configurcionUno">Opcion1</option>
+            <option value="configurcionDos">Opcion1</option>
+            <option value="configurcionTres">Opcion1</option>
+        </select>
+
+        <select name="jugador" id=" jugador">
+            <option value="cantJugador">Jugadores</option>
+            <option value="unJugador">Contra Maquina</option>
+            <option value="dosJugador">Contra amigos</option>
+        </select>
+
+        <select name="dificultad" id="dificultad">
+            <option value="facil">Facil</option>
+            <option value="intermedio">Intermedio</option>
+            <option value="div">Difícil</option>
+        </select>
+
+    </section>
+
+    <section class="contenedorTabla">
+            <div class="item" id="item"></div>
+            <div class="item" id="item"></div>
+            <div class="item" id="item"></div>
+            <div class="item" id="item"></div>
+            <div class="item" id="item"></div>
+            <div class="item" id="item"></div>
+            <div class="item" id="item"></div>
+            <div class="item" id="item"></div>
+            <div class="item" id="item"></div>
+    </section>
+
+    <section>
+        <button id="jugar">Jugar</button>
+        <button id="reiniciar">Reiniciar</button>
+    </section>
+
+    <script src="/src/js/index.js"></script>
+</body>
+</html>
