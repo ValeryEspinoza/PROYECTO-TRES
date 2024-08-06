@@ -6,16 +6,18 @@ let filaColumnas = document.querySelectorAll("div")
 
 
 for (let index = 0; index < filaColumnas.length; index++) {
-
-    if (filaColumnas[index] == "") {
-    listaValores.innerHTML= filaColumnas[index]
-    }
+    /*if (filaColumnas[index] == "") {
+        listaValores.push = filaColumnas[index]
+        }*/
 
     filaColumnas[index].addEventListener("click", function () {
 
 
-        
-            filaColumnas[index].innerHTML= "X"
+            if (filaColumnas[index].textContent === "") {
+                filaColumnas[index].innerHTML= "X"
+                
+            }
+           
 
        
 
@@ -25,36 +27,37 @@ for (let index = 0; index < filaColumnas.length; index++) {
 
             
 
-               if (filaColumnas[index].textContent === "") {
+            if (filaColumnas[index].textContent === "") {
 
-                listaValores.push(filaColumnas[index])
-                }
-            }
-
-                let valorAleatorio=Math.floor(Math.random()*9)
-                listaValores[valorAleatorio].innerHTML= "0"
-
-
-                console.log(valorAleatorio);
-                console.log(listaValores)
-
-        
-
-
-            
-           /* if (filaColumnas[valoAleatorio].textContent == "") {
+                listaValores.push(index)
                 
-            filaColumnas[valoAleatorio].innerHTML= "0"
-            }
-            //else{
-               /* for (let index = 0; index < filaColumnas.length; index++) {
-                if (filaColumnas[valoAleatorio].textContent == "") {
-                    filaColumnas[valoAleatorio].innerHTML= "0"
-                } 
                 }
 
-            }*/
-        
+
+            }
+
+            let valorAleatorio = Math.floor(Math.random()*listaValores.length)
+
+            console.log(valorAleatorio);
+            
+            let nuevoValor = listaValores[valorAleatorio]
+            console.log(listaValores);
+            
+            console.log(nuevoValor);
+            
+            filaColumnas[nuevoValor].innerHTML="0"
+
+            console.log(filaColumnas);
+            
+           
+
+          
+            
+            
+            
+
+                //listaValores[valorAleatorio].innerHTML= "0"
+
         
         
         }
